@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css);
+
+:root {
+    /* Primary Colors */
+    --blue: hsl(246, 80%, 60%);
+    --light-orange: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    /* Neutral Colors */
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --rubik: "Rubik";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: var(--rubik), sans-serif;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    min-width: 375px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+/* card-report - start */
+.card-report {
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+    background-color: var(--blue);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.profile img {
+    width: 25%;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    align-self: center;
+}
+
+.name h1 {
+    color: var(--pale-blue);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.name h2 {
+    font-size: 22.5px;
+    font-weight: 300;
+}
+
+.timeframes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 25px 0 25px 0;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+.timeframes li.selected {
+    color: var(--white);
+}
+
+.timeframes li:hover {
+    color: var(--white);
+}
+/* card-report - end */
+
+.card-work {
+    background: url(../images/icon-work.svg) bottom 11.5vh right 5vw
+        var(--light-orange);
+}
+
+.card-play {
+    background: url(../images/icon-play.svg) bottom 11.5vh right 5vw
+        var(--soft-blue);
+}
+
+.card-study {
+    background: url(../images/icon-study.svg) bottom 11.5vh right 5vw
+        var(--light-red);
+}
+
+.card-exercise {
+    background: url(../images/icon-exercise.svg) bottom 14vh right 5vw
+        var(--lime-green);
+}
+
+.card-social {
+    background: url(../images/icon-social.svg) bottom 10vh right 5vw
+        var(--violet);
+}
+
+.card-self-care {
+    background: url(../images/icon-self-care.svg) bottom 14vh right 5vw
+        var(--soft-orange);
+}
+
+.card-work,
+.card-play,
+.card-study,
+.card-exercise,
+.card-social,
+.card-self-care {
+    background-size: 100% contain;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.top-space {
+    height: 40px;
+}
+
+.contents {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+    padding: 20px 18px 30px 30px;
+}
+
+.contents:hover {
+    cursor: pointer;
+    background-color: var(--desaturated-blue);
+}
+
+.left-side-content {
+    display: flex;
+}
+
+.left-side-content .current h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.left-side-content .current h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.current {
+    margin-top: -50px;
+}
+
+#previousWork,
+#previousPlay,
+#previousStudy,
+#previousExercise,
+#previousSocial,
+#previousSelfCare {
+    color: var(--pale-blue);
+    font-size: 15px;
+    align-self: center;
+    margin-left: auto;
+}
+
+.right-side-content {
+    align-self: flex-end;
+}
+
+/* tablet, landscape iPad, lo-res laptops and desktops */
+@media screen and (min-width: 720px) {
+    .card-wrapper {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        padding: 0;
+    }
+
+    .card-report {
+        margin-top: 25px;
+        height: auto;
+        width: 20%;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile img {
+        width: 40%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .name {
+        padding-right: 50px;
+        padding-bottom: 80px;
+        padding-left: 30px;
+    }
+
+    .name h1 {
+        font-size: 1.5vw;
+        margin-top: 30px;
+    }
+
+    .name h2 {
+        font-size: 4vw;
+    }
+
+    .timeframes ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .timeframes ul li {
+        font-size: 2vw;
+        padding-bottom: 10px;
+        line-height: 53px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        column-gap: 2rem;
+        row-gap: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contents {
+        display: flex;
+        justify-content: flex-start;
+        height: 74%;
+    }
+
+    .left-side-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: -160px;
+    }
+
+    .left-side-content h1 {
+        margin-bottom: 20px;
+        font-size: 5vw;
+    }
+
+    #titleWork,
+    #titlePlay,
+    #titleStudy,
+    #titleExercise,
+    #titleSocial,
+    #titleSelfCare {
+        font-size: 2vw;
+    }
+
+    #currentWork,
+    #currentPlay,
+    #currentStudy,
+    #currentExercise,
+    #currentSocial,
+    #currentSelfCare {
+        font-size: 5vw;
+        margin-top: 30px;
+    }
+
+    #previousWork,
+    #previousPlay,
+    #previousStudy,
+    #previousExercise,
+    #previousSocial,
+    #previousSelfCare {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: auto;
+        font-size: 1.5vw;
+        padding-bottom: 25px;
+    }
+
+    .right-side-content {
+        height: 200px;
+    }
+
+    .card-work,
+    .card-play,
+    .card-study {
+        background-position: bottom 31vh right 1vw;
+    }
+
+    .card-exercise,
+    .card-self-care {
+        background-position: bottom 33vh right 1vw;
+    }
+
+    .card-social {
+        background-position: bottom 28vh right 1vw;
+    }
+}

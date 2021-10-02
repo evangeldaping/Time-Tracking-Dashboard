@@ -1,0 +1,70 @@
+.button-wrapper {
+    text-align: right;
+    line-height: 40px;
+    margin-top: 0px;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--pale-blue);
+}
+
+button .material-icons {
+    font-size: 30px;
+}
+
+.button-orange:hover {
+    color: var(--light-orange);
+}
+
+.button-orange.active {
+    color: var(--light-orange);
+}
+
+.button-blue:hover {
+    color: var(--soft-blue);
+}
+
+.button-blue.active {
+    color: var(--soft-blue);
+}
+
+.button-red:hover {
+    color: var(--light-red);
+}
+
+.button-red.active {
+    color: var(--light-red);
+}
+
+.button-green:hover {
+    color: var(--lime-green);
+}
+
+.button-green.active {
+    color: var(--lime-green);
+}
+
+.button-green:hover {
+    color: var(--lime-green);
+}
+
+.button-violet:hover {
+    color: var(--violet);
+}
+
+.button-violet.active {
+    color: var(--violet);
+}
+
+.button-yellow:hover {
+    color: var(--soft-orange);
+}
+
+.button-yellow.active {
+    color: var(--soft-orange);
+}

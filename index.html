@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/ellipsis.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="card-wrapper">
+      <div class="card-report">
+        <div class="profile">
+          <img src="./images/image-jeremy.png" alt="jeremy-robson">
+          <div class="name">
+            <h1>Report for</h1>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="timeframes">
+          <ul>
+            <li id="liDaily" class="menu-item">Daily</li>
+            <li id="liWeekly" class="menu-item">Weekly</li>
+            <li id="liMonthly" class="menu-item">Monthly</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card-work">
+          <div class="top-space"></div>
+          <div class="contents">
+            <div class="left-side-content">
+              <div class="current">
+                <h1 id="titleWork" class="title">Work</h1>
+                <h2 id="currentWork" class="current-time">32hrs</h2>
+              </div>
+              <p id="previousWork" class="previous-time">Last Week - 36hrs</p>
+            </div>
+            <div class="right-side-content">
+              <div class="button-wrapper">
+                <button class="button-orange">
+                  <i class="material-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-play">
+          <div class="top-space"></div>
+          <div class="contents">
+            <div class="left-side-content">
+              <div class="current">
+                <h1 id="titlePlay" class="title">Play</h1>
+                <h2 id="currentPlay" class="current-time">10hrs</h2>
+              </div>
+              <p id="previousPlay" class="previous-time">Last Week - 8hrs</p>
+            </div>
+            <div class="right-side-content">
+              <div class="button-wrapper">
+                <button class="button-blue">
+                  <i class="material-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-study">
+          <div class="top-space"></div>
+          <div class="contents">
+            <div class="left-side-content">
+              <div class="current">
+                <h1 id="titleStudy" class="title">Study</h1>
+                <h2 id="currentStudy" class="current-time">4hrs</h2>
+              </div>
+              <p id="previousStudy" class="previous-time">Last Week - 7hrs</p>
+            </div>
+            <div class="right-side-content">
+              <div class="button-wrapper">
+                <button class="button-red">
+                  <i class="material-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-exercise">
+          <div class="top-space"></div>
+          <div class="contents">
+            <div class="left-side-content">
+              <div class="current">
+                <h1 id="titleExercise" class="title">Exercise</h1>
+                <h2 id="currentExercise" class="current-time">4hrs</h2>
+              </div>
+              <p id="previousExercise" class="previous-time">Last Week - 5hrs</p>
+            </div>
+            <div class="right-side-content">
+              <div class="button-wrapper">
+                <button class="button-green">
+                  <i class="material-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-social">
+          <div class="top-space"></div>
+          <div class="contents">
+            <div class="left-side-content">
+              <div class="current">
+                <h1 id="titleSocial" class="title">Social</h1>
+                <h2 id="currentSocial" class="current-time">5hrs</h2>
+              </div>
+              <p id="previousSocial" class="previous-time">Last Week - 10hrs</p>
+            </div>
+            <div class="right-side-content">
+              <div class="button-wrapper">
+                <button class="button-violet">
+                  <i class="material-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-self-care">
+          <div class="top-space"></div>
+          <div class="contents">
+            <div class="left-side-content">
+              <div class="current">
+                <h1 id="titleSelfCare" class="title">Self Care</h1>
+                <h2 id="currentSelfCare" class="current-time">2hrs</h2>
+              </div>
+              <p id="previousSelfCare" class="previous-time">Last Week - 2hrs</p>
+            </div>
+            <div class="right-side-content">
+              <div class="button-wrapper">
+                <button class="button-yellow">
+                  <i class="material-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </main>
+
+<script src="js/timeframes.js"></script>
+
+</body>
+</html>
